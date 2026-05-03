@@ -39,7 +39,7 @@ export const config = {
 
 	// multichain support
 	[polygon.id]: {
-		rpc: `https://polygon-rpc.com`,
+		rpc: `https://polygon.llamarpc.com`,
 		maxRequestsPerSecond: 3,
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
@@ -47,7 +47,7 @@ export const config = {
 		startSavingsReferal: 72993144,
 	},
 	[arbitrum.id]: {
-		rpc: `https://arb1.arbitrum.io/rpc`,
+		rpc: `https://arbitrum.llamarpc.com`,
 		maxRequestsPerSecond: 3,
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 10000, // ~250ms blocks — batch more to reduce request count
@@ -55,7 +55,7 @@ export const config = {
 		startSavingsReferal: 349273896,
 	},
 	[optimism.id]: {
-		rpc: `https://mainnet.optimism.io`,
+		rpc: `https://optimism.llamarpc.com`,
 		maxRequestsPerSecond: 3,
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
@@ -63,7 +63,7 @@ export const config = {
 		startSavingsReferal: 137404676,
 	},
 	[base.id]: {
-		rpc: `https://mainnet.base.org`,
+		rpc: `https://base.llamarpc.com`,
 		maxRequestsPerSecond: 3,
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
@@ -71,7 +71,7 @@ export const config = {
 		startSavingsReferal: 31809565,
 	},
 	[avalanche.id]: {
-		rpc: `https://api.avax.network/ext/bc/C/rpc`,
+		rpc: `https://avalanche.llamarpc.com/rpc`,
 		maxRequestsPerSecond: 3,
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
@@ -79,7 +79,7 @@ export const config = {
 		startSavingsReferal: 64919925,
 	},
 	[gnosis.id]: {
-		rpc: `https://rpc.gnosischain.com`,
+		rpc: `https://gnosis.llamarpc.com`,
 		maxRequestsPerSecond: 3,
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 500, // ~5s blocks
