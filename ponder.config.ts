@@ -39,56 +39,56 @@ export const config = {
 
 	// multichain support
 	[polygon.id]: {
-		rpc: `https://polygon.llamarpc.com`,
-		maxRequestsPerSecond: 3,
+    	rpc: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
+    	maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
 		startBridgedFrankencoin: 72384538,
 		startSavingsReferal: 72993144,
 	},
 	[arbitrum.id]: {
-		rpc: `https://arbitrum.llamarpc.com`,
-		maxRequestsPerSecond: 3,
+    rpc: `https://arb-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
+    maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 10000, // ~250ms blocks — batch more to reduce request count
 		startBridgedFrankencoin: 343470012,
 		startSavingsReferal: 349273896,
 	},
 	[optimism.id]: {
-		rpc: `https://optimism.llamarpc.com`,
-		maxRequestsPerSecond: 3,
+    rpc: `https://opt-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
+    maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
 		startBridgedFrankencoin: 136678320,
 		startSavingsReferal: 137404676,
 	},
 	[base.id]: {
-		rpc: `https://base.llamarpc.com`,
-		maxRequestsPerSecond: 3,
+    rpc: `https://base-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
+    maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
 		startBridgedFrankencoin: 31080190,
 		startSavingsReferal: 31809565,
 	},
 	[avalanche.id]: {
-		rpc: `https://avalanche.llamarpc.com/rpc`,
-		maxRequestsPerSecond: 3,
+    rpc: `https://avax-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
+    maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 2000, // ~2s blocks
 		startBridgedFrankencoin: 63337938,
 		startSavingsReferal: 64919925,
 	},
 	[gnosis.id]: {
-		rpc: `https://gnosis.llamarpc.com`,
-		maxRequestsPerSecond: 3,
+    rpc: `https://gnosis-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
+    maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 500, // ~5s blocks
 		startBridgedFrankencoin: 40394536,
 		startSavingsReferal: 40678291,
 	},
 	[sonic.id]: {
-		rpc: `https://rpc.soniclabs.com`,
-		maxRequestsPerSecond: 3,
+    rpc: `https://sonic-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
+    maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
 		ethGetLogsBlockRange: 5000, // ~500ms blocks
 		startBridgedFrankencoin: 31589491,
