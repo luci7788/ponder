@@ -27,7 +27,7 @@ export const config = {
 		rpc: `https://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_RPC_KEY}`,
 		maxRequestsPerSecond: parseInt(process.env.MAX_REQUESTS_PER_SECOND || '10'),
 		pollingInterval: parseInt(process.env.POLLING_INTERVAL_MS || '30000'),
-		ethGetLogsBlockRange: 500, // ~12s blocks
+		ethGetLogsBlockRange: 100, // ~12s blocks
 		startFrankencoin: 18451518,
 		startMintingHubV1: 18451536,
 		startMintingHubV2: 21280757,
